@@ -14,17 +14,34 @@ color : #003889,#392A5B,#222,#333333,
 
 
 
-body {}
+body {
+    width: 1920px;
+    margin:0 auto;
+}
 /* header-------------------------------------------- */
-header {}
-header h1 {}
-header h1 a {}
-header h1 a img {}
+header {
+    background-color: wheat;
+    width: 1920px;
+    height: 97px;
+    padding: 0 150px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {width: 203px; height: 57px;display: inline-block; background-color: yellowgreen;}
+header h1 a {line-height:80px;}
+header h1 a img {width:100%;}
 header nav {}
-header nav .gnb {}
+header nav .gnb {
+    background-color: lightblue;
+    width:579px;
+    display: flex;
+    justify-content: space-between;
+}
 header nav .gnb li {}
 header nav .gnb li a {}
-header nav .lnb_bg {}
+header nav .lnb_bg {display: none;}
 header nav .lnb_bg .lnb {}
 /* lnb 개별 선택자 ---------------------------------=--- */
 header nav .lnb_bg .intro {}
