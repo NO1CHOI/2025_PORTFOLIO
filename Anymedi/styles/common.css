@@ -9,53 +9,84 @@
 60px = 3.75rem
 90px = 5.625rem
 
-color : #003889,#392A5B,#222,#333333,
+color : #003889,#392A5B,#222,#333333,#F5F5F5
 */
 
 
-
-body {
-    width: 1920px;
-    margin:0 auto;
-}
+body {}
 /* header-------------------------------------------- */
 header {
-    background-color: wheat;
+    background-color:#fff;
+    box-shadow: 0 5px 5px -5px #888; ;
+    width: 100%;
+}
+header .header_wrap {
     width: 1920px;
-    height: 97px;
+    margin:0 auto;
+    /* height: 97px; */
     padding: 0 150px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 }
-header h1 {width: 203px; height: 57px;display: inline-block; background-color: yellowgreen;}
-header h1 a {line-height:80px;}
-header h1 a img {width:100%;}
-header nav {}
-header nav .gnb {
-    background-color: lightblue;
+header .header_wrap h1 {width: 203px; height: 57px;display: inline-block;}
+header .header_wrap h1 a {line-height:80px;}
+header .header_wrap h1 a img {width:100%;}
+header .header_wrap nav {}
+header .header_wrap nav .gnb {
+    /* background-color: lightblue; */
+    color:#222;
     width:579px;
     display: flex;
     justify-content: space-between;
+    position:relative;
 }
-header nav .gnb li {}
+header nav .gnb li {padding:40px 0;}
 header nav .gnb li a {}
-header nav .lnb_bg {display: none;}
-header nav .lnb_bg .lnb {}
+header nav .lnb_bg {
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    position:absolute;top:97px;left:0;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    /* 애니메이션 넣을 위치 */
+    transition: all 0.5s;
+    overflow: hidden
+}
+header nav .lnb_bg .lnb {padding:50px 100px;}
+header nav .lnb_bg .lnb li {
+    margin:40px 0;
+}
+header nav .lnb_bg .lnb li a {color:#fff;}
 /* lnb 개별 선택자 ---------------------------------=--- */
 header nav .lnb_bg .intro {}
 header nav .lnb_bg .rnd {}
 header nav .lnb_bg .product {}
 header nav .lnb_bg .investor {}
 header nav .lnb_bg .news {}
-/* main ------------------------------------------------- */
 /* footer ------------------------------------------------- */
-footer {}
-footer .btm_logo {}
-footer .btm_logo a {}
-footer .btm_logo a img {}
-footer .btm_wrap {}
+footer {
+    width: 100%;
+    background-color: #F5F5F5;
+}
+footer .footer_container {
+    width: 1920px;
+    height: 350px;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer_container .btm_logo {
+    width: 150px; height: 150px;
+    display: inline-block;
+    margin-right:650px;
+}
+footer .footer_container .btm_logo a {}
+footer .footer_container .btm_logo a img {width: 100%;}
+footer .footer_container .btm_wrap {}
 footer .btm_wrap .btm {}
 footer .btm_wrap .btm a {}
 footer .btm_wrap .btm_info {}
