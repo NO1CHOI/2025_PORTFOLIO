@@ -22,6 +22,7 @@ main #main_container #main_bnr {
     max-width: 1920px;
     margin: 0 auto;
     height: 900px;
+    overflow: hidden;
     position:relative;
 }
 main #main_container #main_bnr .main_wrap {}
@@ -87,6 +88,7 @@ main #main_container #solution {
     height:1000px;
     background: url(../images/solution_background.png) no-repeat center;
     background-color: #003889;
+    overflow: hidden;
 }
 main #main_container #solution .solution_wrap {
     max-width:1920px;
@@ -95,7 +97,7 @@ main #main_container #solution .solution_wrap {
 }
 main #main_container #solution .solution_wrap h2 {
     font-size: 2.5rem;font-weight: 600;color:#fff;
-    text-align: center;padding:200px 0 100px 0;
+    text-align: center; padding:200px 0 100px 0;
 }
 main #main_container #solution .solution_wrap .container {
     display: flex;
@@ -146,14 +148,60 @@ main #main_container #solution .solution_wrap .solution_deco {
 }
 main #main_container #solution .solution_wrap .solution_deco img {width: 100%;}
 /* skill ==========================================================*/
-main #main_container #skill {display:none;}
-main #main_container #skill .skill_wrap {}
-main #main_container #skill .skill_wrap .skill_intro {}
-main #main_container #skill .skill_wrap .skill_intro h2 {}
-main #main_container #skill .skill_wrap .skill_intro p {}
+main #main_container #skill {
+    width: 100%;
+    /* background-color: wheat; */
+    background-image: url(../images/skill_background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main #main_container #skill .skill_wrap {
+    max-width:1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    position: relative;
+}
+main #main_container #skill .skill_wrap .skill_intro {
+    /* background-color: white; */
+    width:640px;
+    height: 1000px;
+    /* background-color: #003889; */
+    transition: all 0.5s;
+}
+main #main_container #skill .skill_wrap .skill_intro .txt_box {
+    background-color: #003889;
+    width: 439px;
+    height: 191px;
+    overflow: hidden;
+    position:absolute;
+    /* bottom: 100px; */
+    /* left:100px; */
+}
+main #main_container #skill .skill_wrap .skill_intro .txt_box h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:#fff;
+    margin-bottom:35px;
+}
+main #main_container #skill .skill_wrap .skill_intro .txt_box p {
+    color:#fff;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    /* display: none; */
+}
 main #main_container #skill .skill_wrap .first {}
+main #main_container #skill .skill_wrap .first:hover {background-color:rgba(0,0,0,0.5);}
 main #main_container #skill .skill_wrap .second {}
-main #main_container #skill .skill_wrap .third  {}
+main #main_container #skill .skill_wrap .second:hover {background-color:rgba(0,0,0,0.5);}
+main #main_container #skill .skill_wrap .third {}
+main #main_container #skill .skill_wrap .third:hover {background-color:rgba(0,0,0,0.5);}
+main #main_container #skill .skill_wrap .first .txt_box {bottom: 100px;left:100px;}
+main #main_container #skill .skill_wrap .second  .txt_box  {bottom:150px;left:740px;}
+main #main_container #skill .skill_wrap .third  .txt_box  {bottom: 200px;right:100px;}
+
 /* simul ==========================================================*/
 main #main_container #simul {display:none;}
 main #main_container #simul .simul_wrap {}
