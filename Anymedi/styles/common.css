@@ -21,7 +21,7 @@ header {
     width: 100%;
 }
 header .header_wrap {
-    width: 1920px;
+    max-width:1920px;
     margin:0 auto;
     /* height: 97px; */
     padding: 0 150px;
@@ -48,6 +48,7 @@ header nav .lnb_bg {
     width: 100%;
     background-color: rgba(0,0,0,0.8);
     position:absolute;top:97px;left:0;
+    z-index: 999;
     display:flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -56,6 +57,7 @@ header nav .lnb_bg {
     overflow: hidden
 }
 header nav .lnb_bg .lnb {padding:50px 100px;}
+header nav .lnb_bg .lnb:hover {background-color: rgba(0,0,0,0.4);}
 header nav .lnb_bg .lnb li {
     margin:40px 0;
 }
@@ -71,8 +73,9 @@ footer {
     width: 100%;
     background-color: #F5F5F5;
 }
+footer * {color: #222;}
 footer .footer_container {
-    width: 1920px;
+    max-width:1920px;
     height: 350px;
     margin:0 auto;
     display:flex;
@@ -88,8 +91,12 @@ footer .footer_container .btm_logo a {}
 footer .footer_container .btm_logo a img {width: 100%;}
 footer .footer_container .btm_wrap {}
 footer .btm_wrap .btm {}
-footer .btm_wrap .btm a {}
-footer .btm_wrap .btm_info {}
-footer .btm_wrap .btm_info p {}
-footer .btm_wrap address {}
-footer .btm_wrap > p {}
+footer .btm_wrap .btm a {margin-right:51px;font-weight: 600;}
+footer .btm_wrap .btm_info {
+    display:flex;
+    gap:50px;
+    margin: 30px 0;
+}
+footer .btm_wrap .btm_info p {font-size: 0.75rem;}
+footer .btm_wrap address {font-size: 0.75rem;}
+footer .btm_wrap > p {font-size: 0.75rem;margin-top:11px;}

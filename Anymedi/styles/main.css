@@ -11,3 +11,202 @@
 
 color : #003889,#392A5B,#222,#333333,
 */
+
+/* * {outline: 1px solid rgba(255, 0, 0, 0.2);} */
+body main {width: 100%; margin:0 auto;}
+main {}
+main #main_container {}
+/* main_bnr ==========================================================*/
+main #main_container #main_bnr {
+    /* background-color: lightblue; */
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 900px;
+    position:relative;
+}
+main #main_container #main_bnr .main_wrap {}
+main #main_container #main_bnr .main_wrap .bnr {
+    width: 1300px;
+    height: 759px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 400px 0 0 0;
+    background-image: url(../images/bnr.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:absolute;
+    right:0;
+    top:72px;
+    z-index: 1;
+}
+main #main_container #main_bnr .main_wrap .bnr img {}
+main #main_container #main_bnr .main_wrap > .title {
+    position:absolute;
+    top:100px;
+    left:100px;
+}
+main #main_container #main_bnr .main_wrap > .title h1 {
+    font-size: 3.125rem;
+    letter-spacing:0.3rem;
+    font-weight: 600;
+    line-height: 1.3;
+    animation: titleani 1s;
+}
+main #main_container #main_bnr .main_wrap > .title p {
+    animation: titleani 1s both;
+    animation-delay: 0.5s;
+    margin-top:30px;
+    font-size:1.25rem;
+    line-height: 1.5;
+}
+main #main_container #main_bnr .main_wrap > .title p em {font-weight: 600; color:#003889;}
+main #main_container #main_bnr .main_wrap > .title p span {font-weight: 600; color:#392A5B;}
+main #main_container #main_bnr .main_wrap .bnr_deco {
+    width: 443px;
+    position:absolute;
+    left:0;
+    top:600px;
+    animation: ballspin 30s infinite linear; 
+}
+main #main_container #main_bnr .main_wrap .bnr_deco img {width: 100%;}
+/* bnr animaiton */
+@keyframes titleani {
+    0% {transform: translateY(30px); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes ballspin {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
+/* solution ==========================================================*/
+main #main_container #solution {
+    width:100%;
+    height:1000px;
+    background: url(../images/solution_background.png) no-repeat center;
+    background-color: #003889;
+}
+main #main_container #solution .solution_wrap {
+    max-width:1920px;
+    margin: 0 auto;
+    position: relative;
+}
+main #main_container #solution .solution_wrap h2 {
+    font-size: 2.5rem;font-weight: 600;color:#fff;
+    text-align: center;padding:200px 0 100px 0;
+}
+main #main_container #solution .solution_wrap .container {
+    display: flex;
+    flex-flow:row nowrap;
+    gap:100px;
+    justify-content: center;
+}
+main #main_container #solution .solution_wrap .container .solution_contents {
+    width: 650px; height: 450px;
+    background-color: #fff;
+    border-radius: 50px;
+    padding:100px 0 0 70px;
+    position:relative;
+    z-index: 20;
+    transition:all 0.5s;
+}
+main #main_container #solution .solution_wrap .container .solution_contents:hover {
+    box-shadow: inset 0 0 10px #333
+}
+main #main_container #solution .solution_wrap .container .solution_contents p {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color:#222;
+}
+main #main_container #solution .solution_wrap .container .solution_contents p:nth-child(2) {
+    width: 330px;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin:40px 0 36px 0;
+}
+main #main_container #solution .solution_wrap .container .solution_contents p span {font-weight: 600;}
+main #main_container #solution .solution_wrap .container .solution_contents a {}
+main #main_container #solution .solution_wrap .container .solution_contents > img {
+    position:absolute;
+    right:50px;
+    bottom: 50px;
+}
+main #main_container #solution .solution_wrap .container .left p span {color:#003889;}
+main #main_container #solution .solution_wrap .container .right p span {color:#392A5B;}
+main #main_container #solution .solution_wrap .solution_deco {
+    position:absolute;
+    bottom: -200px;
+    right:0;
+    z-index: 1;
+    animation: ballspin 30s infinite linear; 
+    opacity: 0.5;
+    /* background-color: yellow; */
+}
+main #main_container #solution .solution_wrap .solution_deco img {width: 100%;}
+/* skill ==========================================================*/
+main #main_container #skill {display:none;}
+main #main_container #skill .skill_wrap {}
+main #main_container #skill .skill_wrap .skill_intro {}
+main #main_container #skill .skill_wrap .skill_intro h2 {}
+main #main_container #skill .skill_wrap .skill_intro p {}
+main #main_container #skill .skill_wrap .first {}
+main #main_container #skill .skill_wrap .second {}
+main #main_container #skill .skill_wrap .third  {}
+/* simul ==========================================================*/
+main #main_container #simul {display:none;}
+main #main_container #simul .simul_wrap {}
+main #main_container #simul .simul_wrap h2 {}
+main #main_container #simul .simul_wrap p {}
+main #main_container #simul .simul_wrap .simul_contents {}
+main #main_container #simul .simul_wrap .simul_contents .simul_test {}
+main #main_container #simul .simul_wrap .simul_contents .simul_test p {}
+main #main_container #simul .simul_wrap .simul_contents .simul_test p span {}
+main #main_container #simul .simul_wrap .simul_contents .simul_sci {}
+main #main_container #simul .simul_wrap .simul_contents .simul_sci p {}
+main #main_container #simul .simul_wrap .simul_contents .simul_sci p span {}
+main #main_container #simul .simul_wrap .simul_contents .simul_product {}
+main #main_container #simul .simul_wrap .simul_contents .simul_product p {}
+main #main_container #simul .simul_wrap .simul_contents .simul_product p span {}
+/* guides ==========================================================*/
+main #main_container #guides {display:none;}
+main #main_container #guides .guides_wrap {}
+main #main_container #guides .guides_wrap .img_ani {}
+main #main_container #guides .guides_wrap .img_ani .big {}
+main #main_container #guides .guides_wrap .img_ani .big img {}
+main #main_container #guides .guides_wrap .img_ani .small {}
+main #main_container #guides .guides_wrap .img_ani .small img {}
+main #main_container #guides .guides_wrap .img_ani .center {}
+main #main_container #guides .guides_wrap .img_ani .center img {}
+main #main_container #guides .guides_wrap > .contents {}
+main #main_container #guides .guides_wrap > .contents .guides_deco {}
+main #main_container #guides .guides_wrap > .contents .guides_deco > p {}
+main #main_container #guides .guides_wrap > .contents .guides_deco > p img {}
+main #main_container #guides .guides_wrap > .contents .guides_deco h2 {}
+main #main_container #guides .guides_wrap > .contents .guides_deco .sub {}
+main #main_container #guides .guides_wrap > .contents .guides_deco .arrow {}
+main #main_container #guides .guides_wrap > .contents .guides_deco .arrow img {}
+/* notice =========================================================*/
+main #main_container #notice {display:none;}
+main #main_container #notice .notice_wrap {}
+main #main_container #notice .notice_wrap .recruit {}
+main #main_container #notice .notice_wrap .recruit h2 {}
+main #main_container #notice .notice_wrap .recruit p {}
+main #main_container #notice .notice_wrap .recruit .recruit_info {}
+main #main_container #notice .notice_wrap .recruit .recruit_info li {}
+main #main_container #notice .notice_wrap .recruit .recruit_info li a {}
+main #main_container #notice .notice_wrap .recruit .recruit_info li a span {}
+main #main_container #notice .notice_wrap .recruit .recruit_info li a span img {}
+main #main_container #notice .notice_wrap .notice {}
+main #main_container #notice .notice_wrap .notice h2 {}
+main #main_container #notice .notice_wrap .notice p {}
+main #main_container #notice .notice_wrap .notice .notice_info {}
+main #main_container #notice .notice_wrap .notice .notice_info li {}
+main #main_container #notice .notice_wrap .notice .notice_info li a {}
+main #main_container #notice .notice_wrap .notice .notice_info li a .date {}
+main #main_container #notice .notice_wrap .notice .notice_info li a .date p:first-child {}
+main #main_container #notice .notice_wrap .notice .notice_info li a .date p:last-child {}
+main #main_container #notice .notice_wrap .notice .notice_info li a .news {}
+main #main_container #notice .notice_wrap .notice .notice_info li a .news h3 {}
+main #main_container #notice .notice_wrap .notice .notice_info li a .news p {}
