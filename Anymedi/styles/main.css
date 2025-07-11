@@ -172,81 +172,221 @@ main #main_container #skill .skill_wrap .skill_intro {
     transition: all 0.5s;
 }
 main #main_container #skill .skill_wrap .skill_intro .txt_box {
-    background-color: #003889;
+    /* background-color: #003889; */
     width: 439px;
     height: 191px;
     overflow: hidden;
     position:absolute;
-    /* bottom: 100px; */
-    /* left:100px; */
+    transition:all 1s;
 }
 main #main_container #skill .skill_wrap .skill_intro .txt_box h2 {
     font-size: 2.5rem;
     font-weight: 600;
     color:#fff;
     margin-bottom:35px;
+    transition:all 1s;
 }
 main #main_container #skill .skill_wrap .skill_intro .txt_box p {
     color:#fff;
     font-size: 1.25rem;
     line-height: 1.5;
-    /* display: none; */
+    /* opacity: 0; */
+    max-height: 0;
+    overflow: hidden;
+    transform: translateY(0); 
+    transition: 
+    max-height 0.5s ease,
+    opacity 0.5s ease,
+    transform 0.5s ease;
 }
 main #main_container #skill .skill_wrap .first {}
 main #main_container #skill .skill_wrap .first:hover {background-color:rgba(0,0,0,0.5);}
-main #main_container #skill .skill_wrap .second {}
+main #main_container #skill .skill_wrap .first:hover .txt_box {}
+main #main_container #skill .skill_wrap .second {background-color:rgba(0,0,0,0.2);}
 main #main_container #skill .skill_wrap .second:hover {background-color:rgba(0,0,0,0.5);}
-main #main_container #skill .skill_wrap .third {}
+main #main_container #skill .skill_wrap .third {background-color:rgba(0,0,0,0.4);}
 main #main_container #skill .skill_wrap .third:hover {background-color:rgba(0,0,0,0.5);}
 main #main_container #skill .skill_wrap .first .txt_box {bottom: 100px;left:100px;}
 main #main_container #skill .skill_wrap .second  .txt_box  {bottom:150px;left:740px;}
 main #main_container #skill .skill_wrap .third  .txt_box  {bottom: 200px;right:100px;}
 
 /* simul ==========================================================*/
-main #main_container #simul {display:none;}
-main #main_container #simul .simul_wrap {}
-main #main_container #simul .simul_wrap h2 {}
-main #main_container #simul .simul_wrap p {}
-main #main_container #simul .simul_wrap .simul_contents {}
-main #main_container #simul .simul_wrap .simul_contents .simul_test {}
+main #main_container #simul {width: 100%;}
+main #main_container #simul .simul_wrap {
+    height:1000px;
+    text-align: center;
+    background-image: url(../images/simul_background.png);
+    background-position:center;
+    background-size: cover;
+}
+main #main_container #simul .simul_wrap h2 {font-size: 2.5rem;font-weight: 600;margin:209px 0 31px 0;}
+main #main_container #simul .simul_wrap > p {font-size: 1.125rem;line-height: 1.5;margin-bottom: 150px;}
+main #main_container #simul .simul_wrap .simul_contents {
+    background-image: url(../images/simul_sub_background.jpg);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+main #main_container #simul .simul_wrap .simul_contents .simul {
+    width: 430px;height: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap:72px;
+}
+main #main_container #simul .simul_wrap .simul_contents .simul p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    position:relative;
+}
+
+main #main_container #simul .simul_wrap .simul_contents .simul p span {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color:#fff;
+}
+main #main_container #simul .simul_wrap .simul_contents .simul p span::after {
+    content: '';
+    display: block;
+    /* width: 205px; */
+    height: 2px;
+    position:absolute;
+    top:-40px;right:27%;
+    background-color: #fff;
+}
+main #main_container #simul .simul_wrap .simul_contents .simul:hover p span::after {
+    width: 205px;
+    animation: simul 1s both;
+}
+
+@keyframes simul{
+    0% {width: 0;}
+    100% {width: 205px;}
+}
+
+/* 개별 선택자 */
+main #main_container #simul .simul_wrap .simul_contents .simul_test {background:url(../images/simul_001.png);}
 main #main_container #simul .simul_wrap .simul_contents .simul_test p {}
 main #main_container #simul .simul_wrap .simul_contents .simul_test p span {}
-main #main_container #simul .simul_wrap .simul_contents .simul_sci {}
+main #main_container #simul .simul_wrap .simul_contents .simul_sci {background:url(../images/simul_002.png);}
 main #main_container #simul .simul_wrap .simul_contents .simul_sci p {}
 main #main_container #simul .simul_wrap .simul_contents .simul_sci p span {}
-main #main_container #simul .simul_wrap .simul_contents .simul_product {}
+main #main_container #simul .simul_wrap .simul_contents .simul_product {background:url(../images/simul_002.png);}
 main #main_container #simul .simul_wrap .simul_contents .simul_product p {}
 main #main_container #simul .simul_wrap .simul_contents .simul_product p span {}
 /* guides ==========================================================*/
-main #main_container #guides {display:none;}
-main #main_container #guides .guides_wrap {}
-main #main_container #guides .guides_wrap .img_ani {}
-main #main_container #guides .guides_wrap .img_ani .big {}
-main #main_container #guides .guides_wrap .img_ani .big img {}
-main #main_container #guides .guides_wrap .img_ani .small {}
-main #main_container #guides .guides_wrap .img_ani .small img {}
-main #main_container #guides .guides_wrap .img_ani .center {}
-main #main_container #guides .guides_wrap .img_ani .center img {}
-main #main_container #guides .guides_wrap > .contents {}
+main #main_container #guides {
+    width: 100%;
+    /* background-color: wheat; */
+    margin:0 auto;
+}
+main #main_container #guides .guides_wrap {
+    height: 1000px;
+    margin:0 auto;
+    position: relative;
+}
+main #main_container #guides .guides_wrap .img_ani {
+    position: absolute;
+    top:50px; right:500px;
+    z-index: 10;
+}
+main #main_container #guides .guides_wrap .img_ani .big {
+    width: 889px;
+    animation:bigspin 40s linear infinite;
+}
+main #main_container #guides .guides_wrap .img_ani .big img {width: 100%;}
+main #main_container #guides .guides_wrap .img_ani .small {
+    position: absolute;
+    top:100px;right:95px;
+    width: 705px;
+    animation: smallspin 35s linear infinite;
+}
+main #main_container #guides .guides_wrap .img_ani .small img {width: 100%;}
+main #main_container #guides .guides_wrap .img_ani .center {
+    width: 200px;
+    position: absolute;
+    top:350px;right:350px;
+}
+main #main_container #guides .guides_wrap .img_ani .center img {width: 100%;}
+main #main_container #guides .guides_wrap > .contents {position:relative;}
 main #main_container #guides .guides_wrap > .contents .guides_deco {}
-main #main_container #guides .guides_wrap > .contents .guides_deco > p {}
-main #main_container #guides .guides_wrap > .contents .guides_deco > p img {}
-main #main_container #guides .guides_wrap > .contents .guides_deco h2 {}
-main #main_container #guides .guides_wrap > .contents .guides_deco .sub {}
-main #main_container #guides .guides_wrap > .contents .guides_deco .arrow {}
-main #main_container #guides .guides_wrap > .contents .guides_deco .arrow img {}
+main #main_container #guides .guides_wrap > .contents .top {
+    position:absolute;
+    top:100px; left:300px;
+    z-index: 50;
+}
+main #main_container #guides .guides_wrap > .contents .middle {
+    position:absolute;
+    top:350px; right:200px;
+    z-index: 50;
+}
+main #main_container #guides .guides_wrap > .contents .btm {
+    position:absolute;
+    top:700px; left:300px;
+    z-index: 50;
+}
+main #main_container #guides .guides_wrap > .contents .guides_deco p:first-of-type {
+    width: 50px; height: 50px;
+}
+main #main_container #guides .guides_wrap > .contents .top p:first-of-type {
+    position:absolute;
+    top:-50px; left:-50px;
+}
+main #main_container #guides .guides_wrap > .contents .middle p:first-of-type {
+    position:absolute;
+    top:-50px; right:-50px;
+}
+main #main_container #guides .guides_wrap > .contents .btm p:first-of-type {
+    position:absolute;
+    top:-50px; left:-50px;
+}
+main #main_container #guides .guides_wrap > .contents .guides_deco p img {width: 100%;}
+main #main_container #guides .guides_wrap > .contents .guides_deco h2 {
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:#003889;
+}
+main #main_container #guides .guides_wrap > .contents .btm h2 {color:#392A5B;}
+main #main_container #guides .guides_wrap > .contents .guides_deco > .sub {padding:20px 0;}
+main #main_container #guides .guides_wrap > .contents .guides_deco .arrow {width: 106px;}
+main #main_container #guides .guides_wrap > .contents .guides_deco .arrow img {width: 100%;}
+/* guides 애니메이션 효과 */
+
+@keyframes bigspin {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+@keyframes smallspin {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(-360deg);}
+}
 /* notice =========================================================*/
-main #main_container #notice {display:none;}
-main #main_container #notice .notice_wrap {}
-main #main_container #notice .notice_wrap .recruit {}
+main #main_container #notice {}
+main #main_container #notice .notice_wrap {
+    width: 1920px;
+    margin:0 auto;
+    display: flex;
+}
+main #main_container #notice .notice_wrap .recruit {
+    width: calc(1920px / 2);
+    background-color: wheat;
+}
 main #main_container #notice .notice_wrap .recruit h2 {}
 main #main_container #notice .notice_wrap .recruit p {}
 main #main_container #notice .notice_wrap .recruit .recruit_info {}
 main #main_container #notice .notice_wrap .recruit .recruit_info li {}
 main #main_container #notice .notice_wrap .recruit .recruit_info li a {}
-main #main_container #notice .notice_wrap .recruit .recruit_info li a span {}
-main #main_container #notice .notice_wrap .recruit .recruit_info li a span img {}
-main #main_container #notice .notice_wrap .notice {}
+main #main_container #notice .notice_wrap .recruit .recruit_info li a span {
+    width: 50px; height: 50px;
+    display: inline-block;
+}
+main #main_container #notice .notice_wrap .recruit .recruit_info li a span img {width: 100%;}
+main #main_container #notice .notice_wrap .notice {
+    width: calc(1920px / 2);
+    background-color:lightblue;
+}
 main #main_container #notice .notice_wrap .notice h2 {}
 main #main_container #notice .notice_wrap .notice p {}
 main #main_container #notice .notice_wrap .notice .notice_info {}
