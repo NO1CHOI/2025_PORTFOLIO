@@ -363,9 +363,10 @@ main #main_container #guides .guides_wrap > .contents .guides_deco .arrow img {w
     100% {transform: rotate(-360deg);}
 }
 /* notice =========================================================*/
-main #main_container #notice {}
+main #main_container #notice {background-color:#F5F5F5;}
 main #main_container #notice .notice_wrap {
     width: 1920px;
+    /* height: 1000px; */
     margin:0 auto;
     display: flex;
 }
@@ -375,8 +376,14 @@ main #main_container #notice .notice_wrap .recruit {
 }
 main #main_container #notice .notice_wrap .recruit h2 {}
 main #main_container #notice .notice_wrap .recruit p {}
-main #main_container #notice .notice_wrap .recruit .recruit_info {}
-main #main_container #notice .notice_wrap .recruit .recruit_info li {}
+main #main_container #notice .notice_wrap .recruit .recruit_info {
+    display: flex;
+}
+main #main_container #notice .notice_wrap .recruit .recruit_info li {
+    width: 150px;
+    height: 200px;
+    background-color: #fff;
+}
 main #main_container #notice .notice_wrap .recruit .recruit_info li a {}
 main #main_container #notice .notice_wrap .recruit .recruit_info li a span {
     width: 50px; height: 50px;
