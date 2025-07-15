@@ -1,0 +1,162 @@
+/* 
+color:#3070F3,#FCBE39,#F2F2F2,#fff,#000
+18px = 1.125 rem
+20px = 1.25rem
+25px = 1.563 rem
+30px = 1.875 rem
+40px = 2.5rem
+50px = 3.125 rem
+70px = 4.375 rem
+80px = 5 rem
+250px = 15.625rem
+
+*/
+
+main {}
+main #wrap {height: 100vh; }
+main #wrap .swiper-wrapper {}
+/* ================================================ intro */
+main #wrap .swiper-wrapper .intro {
+    /* background-color:lightcoral; */
+    background: url(../images/background/background.png) no-repeat center / cover;
+    overflow:hidden;
+}
+main #wrap .swiper-wrapper .intro .box {}
+main #wrap .swiper-wrapper .intro .box .wave {
+    opacity: .4;
+    position: absolute;
+    bottom:-2900px;
+    left: 0;
+    background: #0af;
+    width: 3000px;
+    height: 3000px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 5s infinite linear;
+}
+main #wrap .swiper-wrapper .intro .box .one {}
+main #wrap .swiper-wrapper .intro .box .two {animation: drift 6s infinite linear;background:#fff;left: 500px;}
+main #wrap .swiper-wrapper .intro .box .three {
+    animation: drift 7s infinite linear;
+    opacity: .1;
+    background:#FCBE39;
+    left: -200px;
+}
+main #wrap .swiper-wrapper .intro .box .title {display: none;}
+
+main #wrap .swiper-wrapper .intro .ani {
+    /* background-color: violet; */
+    color:#e0e0e0;
+    font-size: 1.25rem;
+    position: absolute;
+    z-index: 10;
+    bottom:50px;
+    left:47%;
+    animation: spanani 1s linear infinite alternate;
+}
+/* 애니메이션 */
+@keyframes spanani {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(10px);}
+}
+@keyframes drift {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+}
+/* ================================================ intro2 */
+main #wrap .intro2 {background-color: #3070F3; position:relative;}
+main #wrap .intro2 .intro2_container {width: 1400px; margin:230px auto; }
+main #wrap .intro2 .intro2_container > p {font-size:5rem; color:#fff; margin:0 0 25px 0; font-weight: 600;}
+main #wrap .intro2 .intro2_container > p:nth-child(1){}
+main #wrap .intro2 .intro2_container p:nth-child(2){}
+main #wrap .intro2 .intro2_container > p:nth-child(3){}
+main #wrap .intro2 .intro2_container p:nth-child(4){}
+main #wrap .intro2 .intro2_container .line {
+    content: '';
+    width: 662px; height: 3px;
+    display:inline-block;
+    position:absolute; top:585px; right:450px;
+    background-color: #fff;
+}
+main #wrap .intro2 .intro2_container .number {
+    position: absolute;
+    top:300px;right:520px;
+}
+main #wrap .intro2 .intro2_container .number > p {    
+    font-size: 15.625rem;
+    font-weight: 700;
+    position: relative;
+    color: #ffffff52;
+    display: inline-block;
+    z-index: 1;
+}
+main #wrap .intro2 .intro2_container .number > p::before {
+    content: '1995'; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    background-image: url(../images/icon/wave.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: 0 center;
+    background-clip: text;
+    animation: waveMove 5s linear infinite;
+    z-index: 2;
+}
+main #wrap .intro2 .intro2_container .go {    
+    position: absolute;
+    top:540px;right:320px;
+}
+main #wrap .intro2 .intro2_container .go p {color:#fff;font-size: 5rem;font-weight: 600;}
+main #wrap .intro2 .intro2_container .small_deco {
+    position:absolute;
+    top:340px; right:400px;
+}
+main #wrap .intro2 .intro2_container .small_deco > p {color:#fff;font-size: 1.25rem;}
+main #wrap .intro2 .intro2_container .small_deco > p:nth-child(1) {}
+main #wrap .intro2 .intro2_container .small_deco > p:nth-child(2) {padding:10px 0;}
+main #wrap .intro2 .intro2_container .small_deco > p:nth-child(3) {}
+main #wrap .intro2 .intro2_container .small_deco > p span {color:#fff;font-weight: 600;}
+
+/* 애니메이션 */
+@keyframes waveMove {
+    0% { background-position: 0% center; }
+    100% { background-position: 100% center; }
+}
+/* ================================================ profile */
+main #wrap .swiper-wrapper .profile {width: 100%;}
+main #wrap .swiper-wrapper .profile .container {
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+}
+main #wrap .swiper-wrapper .profile .container .container_left {
+    background-color: wheat;
+    width: 610px;
+    position:relative;
+}
+main #wrap .swiper-wrapper .profile .container .container_left h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    padding:200px 0 0 100px;
+}
+main #wrap .swiper-wrapper .profile .container .container_left h2 em {font-weight: 600; color:#FCBE39;}
+main #wrap .swiper-wrapper .profile .container .container_left h2 span {font-weight: 600; color: #3070F3;}
+main #wrap .swiper-wrapper .profile .container .container_left .blue {position:absolute; top:50px;left:20px;}
+main #wrap .swiper-wrapper .profile .container .container_left .blue img {}
+main #wrap .swiper-wrapper .profile .container .container_left .yellow {position:absolute; top:200px;left:30px;}
+main #wrap .swiper-wrapper .profile .container .container_left .yellow img{}
+main #wrap .swiper-wrapper .profile .container .container_left .info {padding:100px;}
+main #wrap .swiper-wrapper .profile .container .container_left .info li {}
+main #wrap .swiper-wrapper .profile .container .container_left .info li span {}
+main #wrap .swiper-wrapper .profile .container .container_right {
+    width: calc(100% - 610px);
+    background-color: rosybrown;
+}
+
+/* ================================================ project1 */
+/* ================================================ project2 */
+/* ================================================ design */
+/* ================================================ detail */
+/* ================================================ contact */
