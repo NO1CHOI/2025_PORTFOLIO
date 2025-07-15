@@ -1,8 +1,8 @@
 /* 
-color:#3070F3,#FCBE39,#F2F2F2,#fff,#000
-18px = 1.125 rem
+color:#3070F3,#FCBE39,#F2F2F2,#fff,#000,#666666;
+18px = 1.125rem
 20px = 1.25rem
-25px = 1.563 rem
+25px = 1.563rem
 30px = 1.875 rem
 40px = 2.5rem
 50px = 3.125 rem
@@ -13,7 +13,7 @@ color:#3070F3,#FCBE39,#F2F2F2,#fff,#000
 */
 
 main {}
-main #wrap {height: 100vh; }
+main #wrap {height: 100vh;}
 main #wrap .swiper-wrapper {}
 /* ================================================ intro */
 main #wrap .swiper-wrapper .intro {
@@ -132,7 +132,7 @@ main #wrap .swiper-wrapper .profile .container {
     flex-flow: row nowrap;
 }
 main #wrap .swiper-wrapper .profile .container .container_left {
-    background-color: wheat;
+    background-color:#F9F9F9;
     width: 610px;
     position:relative;
 }
@@ -147,16 +147,127 @@ main #wrap .swiper-wrapper .profile .container .container_left .blue {position:a
 main #wrap .swiper-wrapper .profile .container .container_left .blue img {}
 main #wrap .swiper-wrapper .profile .container .container_left .yellow {position:absolute; top:200px;left:30px;}
 main #wrap .swiper-wrapper .profile .container .container_left .yellow img{}
-main #wrap .swiper-wrapper .profile .container .container_left .info {padding:100px;}
-main #wrap .swiper-wrapper .profile .container .container_left .info li {}
-main #wrap .swiper-wrapper .profile .container .container_left .info li span {}
+main #wrap .swiper-wrapper .profile .container .container_left .info {padding:200px 0 0 100px;}
+main #wrap .swiper-wrapper .profile .container .container_left .info li {
+    /* background-color: violet; */
+    margin:20px 0;
+    width: 400px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main #wrap .swiper-wrapper .profile .container .container_left .info li span {font-size: 1.563rem; font-weight: 600; color: #3070F3;}
+main #wrap .swiper-wrapper .profile .container .container_left .info li em{font-size: 1.125rem; font-weight: 600; color:#666666;}
 main #wrap .swiper-wrapper .profile .container .container_right {
     width: calc(100% - 610px);
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
 }
+main #wrap .swiper-wrapper .profile .container .container_right .container_top {
+    width: 1000px;
+    display:flex;
+    flex-flow:row wrap;
+    padding:100px 30px;
+    gap:50px;
+}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .edu {animation: upani 0.5s linear both; animation-delay: 0.2s;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .edu h2 {font-size: 1.25rem; font-weight: 600; color: #3070F3;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .edu h2 ul {}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .edu ul li {margin:10px;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .edu ul li em {font-size: 1.125rem; color:#222;font-weight: 600; margin-right:13px;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .edu ul li span {font-size: 1rem; color:#666666;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .license h2 {font-size: 1.25rem; font-weight: 600; color: #3070F3;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .license {animation: upani 0.5s linear both; animation-delay: 0.5s;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .license h2 ul {}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .license ul li {margin:10px;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .license ul li em {font-size: 1.125rem; color:#222;font-weight: 600; margin-right:13px;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .license ul li span {font-size: 1rem; color:#666666;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .career {animation: upani 0.5s linear both; animation-delay: 1s;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .career h2 {font-size: 1.25rem; font-weight: 600; color: #3070F3;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .career ul {}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .career ul li {margin:10px;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .career ul li em {font-size: 1.125rem; color:#222;font-weight: 600; margin-right:13px;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .career ul li span {font-size: 1rem; color:#666666;}
+/* ----------------------------------------skill */
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap {animation: upani 0.5s linear both; animation-delay: 1s;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap {background-color: white; padding-left:30px;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap h2 {font-size: 1.25rem; font-weight: 600; color: #3070F3;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill {
+    padding:20px 0 0 10px;
+    display: flex;
+    flex-flow: column wrap;
+    height: 340px;
+    gap:35px;
+}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent {
+    width: 530px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent h3 {}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent .total_bar {
+    content: '';
+    display: inline-block;
+    width: 384px;
+    height: 8px;
+    background-color: #EBEBEB;
+    border-radius: 50px;
+    position: relative;
+}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent .total_bar .bar {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 8px;
+    background-color: #3070F3;
+    border-radius: 50px;
+    position:absolute;
+    top:0; left:0;
+    animation:barani 0.5s linear both;
+}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent1 .total_bar .bar {width:80%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent2 .total_bar .bar {width:50%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent3 .total_bar .bar {width:80%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent4 .total_bar .bar {width:70%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent5 .total_bar .bar {width:70%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent6 .total_bar .bar {width:90%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent7 .total_bar .bar {width:60%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent8 .total_bar .bar {width:70%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent9 .total_bar .bar {width:50%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent10 .total_bar .bar {width:30%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent11 .total_bar .bar {width:50%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent12 .total_bar .bar {width:40%;}
+
+/* 애니메이션 */
+@keyframes upani {
+    0% {opacity: 0; transform: translateY(10px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
 
 /* ================================================ project1 */
 /* ================================================ project2 */
 /* ================================================ design */
 /* ================================================ detail */
 /* ================================================ contact */
+
+/* =============================================== 디자인 팝업 */
+.popup_bg {
+    position:fixed;
+    top:0;left:0;
+    z-index: 888;
+    width:100%;
+    height:100vh;
+    display:block;
+    background-color: rgba(0,0,0,0.5);
+    /* 초기상태 */
+    display: none;
+}
+.popup_bg .popup {
+    width: 700px;
+    height:80vh;
+    margin: 80px auto;
+    overflow: auto;
+}
+.popup_bg .popup img {width: 100%;}
