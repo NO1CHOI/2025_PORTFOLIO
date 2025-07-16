@@ -568,7 +568,27 @@ main #wrap .contact .container h1 {
     margin-left:20px;
 }
 main #wrap .contact .container h1 em {font-weight: 600; color: #fff;}
-
+main #wrap .swiper-wrapper .contact .box {}
+main #wrap .swiper-wrapper .contact .box .wave {
+    opacity: .4;
+    position: absolute;
+    bottom:-2900px;
+    left: 0;
+    background: #0af;
+    width: 3000px;
+    height: 3000px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 5s infinite linear;
+}
+main #wrap .swiper-wrapper .contact .box .one {}
+main #wrap .swiper-wrapper .contact .box .two {animation: drift 6s infinite linear;background:#fff;left: 500px;}
+main #wrap .swiper-wrapper .contact .box .three {
+    animation: drift 7s infinite linear;
+    opacity: .1;
+    background:#FCBE39;
+    left: -200px;
+}
 /* =============================================== 디자인 팝업 */
 .popup_bg {
     position:fixed;
