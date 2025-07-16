@@ -246,7 +246,7 @@ main #wrap .swiper-wrapper .profile .container .container_right .container_btm .
 }
 
 /* ================================================ project1 */
-main #wrap .project1 {background:url(../images/background/prj_b_001.jpg) center / cover;}
+main #wrap .project1 {background:url(../images/background/prj_b_001_1.jpg) center / cover;}
 main #wrap .project1 .container {
     height: 100vh;
     display:flex;
@@ -316,7 +316,7 @@ main #wrap .project1 .container .contents .button .wire a {
 }
 main #wrap .project1 .container .contents .button .wire a:hover {color:#3070F3;}
 /* ================================================ project2 */
-main #wrap .project2 {background:url(../images/background/prj_b_002.jpg) center / cover;}
+main #wrap .project2 {background:url(../images/background/prj_b_002_2.jpg) center / cover;}
 main #wrap .project2 .container {
     height: 100vh;
     display:flex;
@@ -386,7 +386,7 @@ main #wrap .project2 .container .contents .button .wire a {
 }
 main #wrap .project2 .container .contents .button .wire a:hover {color:#3070F3;}
 /* ================================================ project3 */
-main #wrap .project3 {background:url(../images/background/prj_b_003.jpg) center / cover;}
+main #wrap .project3 {background:url(../images/background/prj_b_003_3.jpg) center / cover;}
 main #wrap .project3 .container {
     height: 100vh;
     display:flex;
