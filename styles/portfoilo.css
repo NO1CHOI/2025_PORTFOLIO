@@ -474,6 +474,77 @@ main #wrap .project3 .container .contents .button .wire a {
     display: inline-block;
 }
 main #wrap .project3 .container .contents .button .wire a:hover {color:#3070F3;}
+/* ================================================ project4 */
+main #wrap .project4 {background:url(../images/background/cookat_background.jpg) center / cover;}
+main #wrap .project4 .container {
+    height: 100vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main #wrap .project4 .container .img_wrap {/* background-color: teal; */}
+main #wrap .project4 .container .img_wrap .img_item {width:1000px;}
+main #wrap .project4 .container .img_wrap .img_item.animation {animation: upani 1s linear both;}
+main #wrap .project4 .container .img_wrap .img_item img {width: 100%;}
+main #wrap .project4 .container .contents {
+    /* background-color: wheat; */
+    width: 600px;
+    margin-right:200px;
+}
+main #wrap .project4 .container .contents h1 {width:250px; margin:0 0 20px 180px;}
+main #wrap .project4 .container .contents h1 img {width: 100%;}
+main #wrap .project4 .container .contents .project_info {
+    padding:50px;
+    background-color:rgba(0,0,0,0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+main #wrap .project4 .container .contents .project_info h2 {
+    font-size: 1.25rem; color: #3070F3; font-weight: 600;
+    margin-bottom: 30px;
+}
+main #wrap .project4 .container .contents .project_info p {margin-bottom:20px;color: #fff;}
+main #wrap .project4 .container .contents .project_about {
+    padding:50px;
+    background-color:rgba(0,0,0,0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+main #wrap .project4 .container .contents .project_about h2 {
+    font-size: 1.25rem; color: #3070F3;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+main #wrap .project4 .container .contents .project_about p {color: #fff; margin-bottom:20px;}
+main #wrap .project4 .container .contents .project_about p span {color:#fff;margin-left:50px;}
+main #wrap .project4 .container .contents .project_about p:nth-child(2) span {margin-left:60px;}
+main #wrap .project4 .container .contents .button {
+    display: flex;
+    justify-content: right;
+    margin-top:20px;
+}
+main #wrap .project4 .container .contents .button .proto {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-right:10px;
+}
+main #wrap .project4 .container .contents .button .proto a {
+    font-weight: 600; transition:all 0.5s;
+    padding:20px 50px;
+    display: inline-block;
+}
+main #wrap .project4 .container .contents .button .proto a:hover {color:#3070F3;}
+main #wrap .project4 .container .contents .button .wire {    
+    background-color: #fff;
+    border-radius: 10px;
+}
+main #wrap .project4 .container .contents .button .wire a {
+    font-weight: 600; transition:all 0.5s;
+    padding:20px 50px;
+    display: inline-block;
+}
+main #wrap .project4 .container .contents .button .wire a:hover {color:#3070F3;}
 /* ================================================ design bnr*/
 main #wrap .design {}
 main #wrap .design .container {width: 1600px; margin:50px auto;}
