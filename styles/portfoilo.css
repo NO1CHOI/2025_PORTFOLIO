@@ -143,9 +143,9 @@ main #wrap .swiper-wrapper .profile .container .container_left h2 {
 }
 main #wrap .swiper-wrapper .profile .container .container_left h2 em {font-weight: 600; color:#FCBE39;}
 main #wrap .swiper-wrapper .profile .container .container_left h2 span {font-weight: 600; color: #3070F3;}
-main #wrap .swiper-wrapper .profile .container .container_left .blue {position:absolute; top:50px;left:20px;}
+main #wrap .swiper-wrapper .profile .container .container_left .blue {position:absolute; top:50px;left:20px; animation: circleani 1.5s linear infinite alternate;}
 main #wrap .swiper-wrapper .profile .container .container_left .blue img {}
-main #wrap .swiper-wrapper .profile .container .container_left .yellow {position:absolute; top:200px;left:30px;}
+main #wrap .swiper-wrapper .profile .container .container_left .yellow {position:absolute; top:200px;left:30px;animation: circleani 1s linear infinite alternate;}
 main #wrap .swiper-wrapper .profile .container .container_left .yellow img{}
 main #wrap .swiper-wrapper .profile .container .container_left .info {padding:200px 0 0 100px;}
 main #wrap .swiper-wrapper .profile .container .container_left .info li {
@@ -170,26 +170,26 @@ main #wrap .swiper-wrapper .profile .container .container_right .container_top {
     padding:100px 30px;
     gap:50px;
 }
-main #wrap .swiper-wrapper .profile .container .container_right .container_top .edu {animation: upani 0.5s linear both; animation-delay: 0.2s;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .edu {}
 main #wrap .swiper-wrapper .profile .container .container_right .container_top .edu h2 {font-size: 1.25rem; font-weight: 600; color: #3070F3;}
 main #wrap .swiper-wrapper .profile .container .container_right .container_top .edu h2 ul {}
 main #wrap .swiper-wrapper .profile .container .container_right .container_top .edu ul li {margin:10px;}
 main #wrap .swiper-wrapper .profile .container .container_right .container_top .edu ul li em {font-size: 1.125rem; color:#222;font-weight: 600; margin-right:13px;}
 main #wrap .swiper-wrapper .profile .container .container_right .container_top .edu ul li span {font-size: 1rem; color:#666666;}
 main #wrap .swiper-wrapper .profile .container .container_right .container_top .license h2 {font-size: 1.25rem; font-weight: 600; color: #3070F3;}
-main #wrap .swiper-wrapper .profile .container .container_right .container_top .license {animation: upani 0.5s linear both; animation-delay: 0.5s;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .license {}
 main #wrap .swiper-wrapper .profile .container .container_right .container_top .license h2 ul {}
 main #wrap .swiper-wrapper .profile .container .container_right .container_top .license ul li {margin:10px;}
 main #wrap .swiper-wrapper .profile .container .container_right .container_top .license ul li em {font-size: 1.125rem; color:#222;font-weight: 600; margin-right:13px;}
 main #wrap .swiper-wrapper .profile .container .container_right .container_top .license ul li span {font-size: 1rem; color:#666666;}
-main #wrap .swiper-wrapper .profile .container .container_right .container_top .career {animation: upani 0.5s linear both; animation-delay: 1s;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .career {}
 main #wrap .swiper-wrapper .profile .container .container_right .container_top .career h2 {font-size: 1.25rem; font-weight: 600; color: #3070F3;}
 main #wrap .swiper-wrapper .profile .container .container_right .container_top .career ul {}
 main #wrap .swiper-wrapper .profile .container .container_right .container_top .career ul li {margin:10px;}
 main #wrap .swiper-wrapper .profile .container .container_right .container_top .career ul li em {font-size: 1.125rem; color:#222;font-weight: 600; margin-right:13px;}
 main #wrap .swiper-wrapper .profile .container .container_right .container_top .career ul li span {font-size: 1rem; color:#666666;}
 /* ----------------------------------------skill */
-main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap {animation: upani 0.5s linear both; animation-delay: 1s;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap {}
 main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap {background-color: white; padding-left:30px;}
 main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap h2 {font-size: 1.25rem; font-weight: 600; color: #3070F3;}
 main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill {
@@ -224,25 +224,41 @@ main #wrap .swiper-wrapper .profile .container .container_right .container_btm .
     border-radius: 50px;
     position:absolute;
     top:0; left:0;
-    animation:barani 0.5s linear both;
 }
-main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent1 .total_bar .bar {width:80%;}
-main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent2 .total_bar .bar {width:50%;}
-main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent3 .total_bar .bar {width:80%;}
-main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent4 .total_bar .bar {width:70%;}
-main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent5 .total_bar .bar {width:70%;}
-main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent6 .total_bar .bar {width:90%;}
-main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent7 .total_bar .bar {width:60%;}
-main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent8 .total_bar .bar {width:70%;}
-main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent9 .total_bar .bar {width:50%;}
-main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent10 .total_bar .bar {width:30%;}
-main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent11 .total_bar .bar {width:50%;}
-main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent12 .total_bar .bar {width:40%;}
+
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent .total_bar .bar.barani {animation: barani 2s forwards;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent1 .total_bar .bar {--target-width: 80%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent2 .total_bar .bar {--target-width: 50%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent3 .total_bar .bar {--target-width: 80%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent4 .total_bar .bar {--target-width: 70%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent5 .total_bar .bar {--target-width: 90%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent6 .total_bar .bar {--target-width: 60%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent7 .total_bar .bar {--target-width: 70%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent8 .total_bar .bar {--target-width: 60%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent9 .total_bar .bar {--target-width: 50%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent10 .total_bar .bar {--target-width: 30%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent11 .total_bar .bar {--target-width: 50%;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_btm .skill_wrap .skill .talent12 .total_bar .bar {--target-width: 40%;}
+
+
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .edu.animation {animation: upani 1s linear both;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .license.animation {animation: upani 1s linear both; animation-delay: 0.5s;}
+main #wrap .swiper-wrapper .profile .container .container_right .container_top .career.animation {animation: upani 1s linear both;animation-delay: 1s;}
 
 /* 애니메이션 */
 @keyframes upani {
-    0% {opacity: 0; transform: translateY(10px);}
+    0% {opacity: 0; transform: translateY(13px);}
     100% {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes barani {
+    from {width: 0;}
+    to {width: var(--target-width);}
+}
+
+@keyframes circleani {
+    0% {transform: translateY(-5px);}
+    100% {transform: translateY(2px);}
 }
 
 /* ================================================ project1 */
@@ -255,6 +271,7 @@ main #wrap .project1 .container {
 }
 main #wrap .project1 .container .img_wrap {/* background-color: teal; */}
 main #wrap .project1 .container .img_wrap .img_item {width:1000px;}
+main #wrap .project1 .container .img_wrap .img_item.animation {animation: upani 1s linear both;}
 main #wrap .project1 .container .img_wrap .img_item img {width: 100%;}
 main #wrap .project1 .container .contents {
     /* background-color: wheat; */
@@ -325,6 +342,7 @@ main #wrap .project2 .container {
 }
 main #wrap .project2 .container .img_wrap {/* background-color: teal; */}
 main #wrap .project2 .container .img_wrap .img_item {width:1000px;}
+main #wrap .project2 .container .img_wrap .img_item.animation {animation: upani 1s linear both;}
 main #wrap .project2 .container .img_wrap .img_item img {width: 100%;}
 main #wrap .project2 .container .contents {
     /* background-color: wheat; */
@@ -395,6 +413,7 @@ main #wrap .project3 .container {
 }
 main #wrap .project3 .container .img_wrap {/* background-color: teal; */}
 main #wrap .project3 .container .img_wrap .img_item {width:1000px;}
+main #wrap .project3 .container .img_wrap .img_item.animation {animation: upani 1s linear both;}
 main #wrap .project3 .container .img_wrap .img_item img {width: 100%;}
 main #wrap .project3 .container .contents {
     /* background-color: wheat; */

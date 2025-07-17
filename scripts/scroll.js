@@ -1,8 +1,34 @@
+
+
 // 전체 수직 스크롤
 const wrap = new Swiper('#wrap',{
     direction:'vertical',
     mousewheel:true,
-    behavier:'smooth',
+    // behavier:'smooth',
+    on:{
+        slideChange:function(){//swiper 변경됐을 때 인식함수
+            // 스와이퍼애니메이션
+            const edu = document.querySelector('.profile .edu')
+            const license = document.querySelector('.profile .license')
+            const career = document.querySelector('.profile .career')
+            const bar = document.querySelectorAll('.profile .total_bar .bar') 
+            console.log(edu,license,career)
+            // 우선 클래스 제거
+            edu.classList.remove('animation');
+            license.classList.remove('animation');
+            career.classList.remove('animation');
+            for(let i of bar) i.classList.remove('barani');
+            const activeSlide = this.slides[this.activeIndex];
+            console.log(activeSlide); //인덱스 번호 확인 (번호가 만약 2번이라면)
+
+            if(this.activeIndex == 2){
+                edu.classList.add('animation');
+                license.classList.add('animation');
+                career.classList.add('animation');
+                for(let i of bar) i.classList.add('barani');
+            }
+        }
+    }
 })
 
 //디자인 bnr
@@ -119,23 +145,3 @@ for(let detail of detailProject){
     })
 }
 
-
-
-//sns 프로젝트 클릭 시 팝업 실행 (클릭한 이미지가 팝업 이미지로 교체)
-// const snsProject = document.querySelectorAll('#sns_swiper .swiper-slide')
-// const popup = document.querySelector('.popup_bg')
-// console.log(snsProject,popup)
-
-// for(let sns of snsProject){
-//     sns.addEventListener('click',()=>{
-//         // console.log('확인') //콘솔확인
-//         popup.style.display = 'block';
-//         popup.children[0].children[0].src = sns.children[0].src
-//         // 팝업 실행 시 전체 수직 swiper 스크롤 기능 막기
-//         wrap.mousewheel.disable(); // 스크롤 풀기 enable()
-//     })
-//     popup.addEventListener('click',()=>{
-//         popup.style.display = 'none';
-//         wrap.mousewheel.enable();
-//     })
-// }
